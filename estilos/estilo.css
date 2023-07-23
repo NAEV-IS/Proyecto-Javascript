@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(64, 64, 64);
+}
+.titulo{
+    display: flex;
+    padding: 60px;
+    justify-content: center;
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+.indumentaria{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding: 20px;
+
+}
+.indumentaria img{
+    height: 318px;
+    width: 418px;
+    padding: 20px;
+}
