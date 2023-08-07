@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactanos a traves de este medio de mensajeria">
+    <meta name="keywords" content="DPR, MENSAJE, CONTACTO, EMAIL, NOMBRE ">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../estilos/bootstrap.min.css">
+    <link rel="stylesheet" href="../cesees/estilo.css">
+    <script src="../javascript/carrito.js"defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">HOME.</a>
+        <form action="#" class="searchform order-sm-start order-lg-last">
+        <div class="form-group d-flex">
+        </div>
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catalogo
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="productos.html">todo los productos</a></li>
+                    <li><a class="dropdown-item" href="#">remeras</a></li>
+                    <li><a class="dropdown-item" href="#">pantalones</a></li>
+                    <li><a class="dropdown-item" href="#">abrigos</a></li>
+                </ul>
+              </li>
+        </li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="carrito.html" class="nav-link">Carrito</a></li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+    
+    <main class="main-carrito">
+
+        <h1 class="titulo-carrito">Carrito</h1>
+        <div class="contenedor-carrito">
+        
+
+            <div class="carrito-indumentarias">
+
+                <div class="carrito-indumentaria">
+                    <img class="carrito-indumentaria-img" src="../img/remeras/01.jpg" alt="">
+                    <div class="carrito-indumentaria-nombre">
+                        <small>titulo</small>
+                        <h3>T-shirt Black</h3>
+                    </div>
+                    <div class="carrito-indumentaria-cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito-indumentaria-precio">
+                        <small>Precio</small>
+                        <p>$10.000</p>
+                    </div>
+                    <div class="carrito-indumentaria-subtotal">
+                        <small>Subtota</small>
+                        <p>$10.000</p>
+                    </div>
+                    <button class="carrito-indumentaria-quitar"><i class="bi bi-trash"></i></button>
+                </div>
+
+
+                <div class="carrito-indumentaria">
+                    <img class="carrito-indumentaria-img" src="../img/remeras/02.png" alt="">
+                    <div class="carrito-indumentaria-nombre">
+                        <small>titulo</small>
+                        <h3>T-shirt White</h3>
+                    </div>
+                    <div class="carrito-indumentaria-cantidad">
+                        <small>Cantidad</small>
+                        <p>1</p>
+                    </div>
+                    <div class="carrito-indumentaria-precio">
+                        <small>Precio</small>
+                        <p>$10.000</p>
+                    </div>
+                    <div class="carrito-indumentaria-subtotal">
+                        <small>Subtotal</small>
+                        <p>$10.000</p>
+                    </div>
+                    <button class="carrito-indumentaria-quitar"><i class="bi bi-trash"></i></button>
+                </div>
+
+
+            </div>
+
+            <div class="carrito-accion">
+
+                <div class="carrito-accion-izquierda">
+                    <button class="carrito-accion-vaciar">Vaciar carrito</button>
+                </div>
+
+                <div class="carrito-accion-derecha">
+                    <div class="carrito-accion-total">
+                        <p>Total :</p>
+                        <p id="total">$20.000</p>
+                    </div>
+                    <button class="carrito-accion-comprar">Comprar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
