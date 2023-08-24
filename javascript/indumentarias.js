@@ -3,7 +3,7 @@
 
 const indumentarias = [
   {
-    id: "remera 01",
+    id: "Remera 01",
     nombre: "T-shirt Black",
     img: "../img/remeras/01.jpg",
     precio : 10000,
@@ -13,7 +13,7 @@ const indumentarias = [
     }
   },
   {
-    id: "remera 02",
+    id: "Remera 02",
     nombre: "T-shirt White",
     img: "../img/remeras/02.png",
     precio : 10000,
@@ -23,7 +23,7 @@ const indumentarias = [
     }
   },
   {
-    id: "remera 03",
+    id: "Remera 03",
     nombre: "T-shirt Rainbow Black",
     img: "../img/remeras/03.jpg",
     precio : 10000,
@@ -33,7 +33,7 @@ const indumentarias = [
     }
   },
   {
-    id: "remera 04",
+    id: "Remera 04",
     nombre: "T-shirt Rainbow White",
     img: "../img/remeras/04.jpg",
     precio : 10000,
@@ -43,7 +43,7 @@ const indumentarias = [
     }
   },
   {
-    id: "pantalon 01",
+    id: "Pantalon 01",
     nombre: "Jean Black",
     img: "../img/pantalones/01.png",
     precio : 15000,
@@ -53,7 +53,7 @@ const indumentarias = [
     }
   },
   {
-    id: "pantalon 02",
+    id: "Pantalon 02",
     nombre: "Pants Black",
     img: "../img/pantalones/02.png",
     precio : 15000,
@@ -63,7 +63,7 @@ const indumentarias = [
     }
   },
   {
-    id: "pantalon 03",
+    id: "Pantalon 03",
     nombre: "Pants Grey",
     img: "../img/pantalones/03.jpg",
     precio : 15000,
@@ -73,7 +73,7 @@ const indumentarias = [
     }
   },
   {
-    id: "pantalon 04",
+    id: "Pantalon 04",
     nombre: "Pants Orange",
     img: "../img/pantalones/04.jpg",
     precio : 15000,
@@ -126,14 +126,14 @@ const indumentarias = [
 
 //cargando los productos haciendo uso del dom//
 
-let contenedorIndumentaria = document.querySelector(".indumentaria-contenedor")
+let contenedorIndumentaria = document.querySelector(".indumentaria-contenedor");
 
 function cargarIndumentaria(indumentarias){
 
   indumentarias.forEach(indumentaria => {
 
-    let div = document.createElement("div")
-    div.classList.add("indumentaria")
+    let div = document.createElement("div");
+    div.classList.add("indumentaria");
     div.innerHTML = `
     <div class="indumentaria">
       <img class="indumentaria-imagen" src="${indumentaria.img}" alt="${indumentaria.id}">
@@ -144,7 +144,7 @@ function cargarIndumentaria(indumentarias){
       </div>
     </div>
     `
-    contenedorIndumentaria.append(div)
+    contenedorIndumentaria.append(div);
   })
 }
 
@@ -153,7 +153,7 @@ cargarIndumentaria(indumentarias);
 //filtrado por categoria de ropa //
 
 
-const filtroCategoria = document.querySelectorAll(".boton-filtrado")
+const filtroCategoria = document.querySelectorAll(".boton-filtrado");
 
 filtroCategoria.forEach(filtrado =>{
 
@@ -165,7 +165,7 @@ filtroCategoria.forEach(filtrado =>{
 
     contenedorIndumentaria.innerHTML = "";
 
-    cargarIndumentaria(filtradoSeleccionado)
+    cargarIndumentaria(filtradoSeleccionado);
   })
 })
 
@@ -189,12 +189,18 @@ function agregaCarrito(e) {
   if (elementoEnCarrito) {
     elementoEnCarrito.suma++;
   } else {
-    indumentariaSeleccionada.suma = 1
+    indumentariaSeleccionada.suma = 1;
     indumentariaCarrito.push(indumentariaSeleccionada);
   }
 
   localStorage.setItem("indumentariaSeleccionada", JSON.stringify(indumentariaCarrito));
-  console.log("Producto al carrito 😉");
+  Swal.fire({
+    title: 'Agregado!',
+    text: 'Producto al carrito 😉',
+    icon: 'success',
+    confirmButtonText: 'Ok'
+  })
+
 }
 
 

@@ -114,19 +114,15 @@ body{
 }
 
 .carrito-indumentaria-img{
-    width: 6rem;
+    width: 10rem;
     border-radius: 1rem;
+}
+.carrito-indumentaria-nombre{
+    display: flex;
+    flex-direction: column;
 }
 .carrito-indumentaria small{
     font-size: 0.75rem;
-}
-
-.carrito-indumentaria-quitar{
-    border: 0;
-    background-color: red;
-    width: 20px;
-    height: 5px;
-    cursor: pointer;
 }
 
 .carrito-accion{

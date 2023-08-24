@@ -9,6 +9,7 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="../estilos/bootstrap.min.css">
     <link rel="stylesheet" href="../cesees/estilo.css">
+    <script src="../javascript/formulario.js"defer></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -43,7 +44,7 @@
         </nav>
     
     <main>
-        <form class="formulario row">
+        <form class="formulario row" action="https://formspree.io/f/mqkvqkwn" method="POST">
             <div class="col-12">
                 <label for="nombre"></label>
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="NOMBRE">
@@ -67,5 +68,6 @@
     </main>
     
     <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
